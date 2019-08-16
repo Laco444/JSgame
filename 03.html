@@ -1,0 +1,29 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <canvas id="paper" width="1000" height="1000">
+
+        </canvas>
+    </body>
+    <script>
+            let canvas = document.getElementById("paper")
+            let x = 0;
+            let ctx = canvas.getContext('2d')
+            
+            function draw(){
+                ctx.fillStyle = 'red'
+                ctx.fillRect(0,10, 5, 5)
+            ctx.strokeRect(150,15,0,400)
+            ctx.strokeRect(150,175,250,0)
+            ctx.strokeRect(400,15,0,400)
+            ctx.strokeRect(500,15,0,400)
+            ctx.strokeRect(500,175,250,0)
+            ctx.strokeRect(500,15,250,0)
+            ctx.strokeRect(500,400,250,0)
+            ctx.stroke()
+            }draw()
+            
+        </script>
+</html>
